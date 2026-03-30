@@ -8,9 +8,16 @@
 <body>
     <h1>Exemplo de PHP</h1>
 
-    <? 
-        echo "Hoje é dia " . date("d/M");
-        echo "e a hora atual é " . date("G:i:s");
+    <?php
+        $nome = "Gustavo";
+        $sobrenome = "Samuel";
+        const PAIS = "Brasil";
+
+        $nome = "Rafael";
+        
+        echo "Muito prazer, $nome $sobrenome! Você mora no " . PAIS;
     ?>
+
+
 </body>
 </html>
