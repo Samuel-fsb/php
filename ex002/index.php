@@ -16,6 +16,16 @@
         $nome = "Rafael";
         
         echo "Muito prazer, $nome $sobrenome! Você mora no " . PAIS;
+
+        $nome3 ="Julia";
+        echo "É verdade que seu nome é  $nome3?";
+
+        $salario = 2333.45;
+        echo "Seu salário é de $salario!";
+
+        const _TX = 569;
+        echo "Resultado " . _TX;
+
     ?>
 
 
