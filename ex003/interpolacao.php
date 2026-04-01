@@ -9,10 +9,15 @@
     <h1>Intepolação de Aspas Simples e Duplas</h1>
 
     <?php 
-    const Estado = "RJ";
+    /*const Estado = "RJ";
     echo "Eu moro no estado " . Estado;
 
-    echo "Estamos no ano de " . date('Y'); //Com essas aspas duplas o PHP vai interpretar as variáveis.
+    echo "Estamos no ano de " . date('Y'); //Com essas aspas duplas o PHP vai interpretar as variáveis.*/
+
+    $nome = "Gustavo";
+    $sobrenome = "Guanabara";
+    $apelido = 'Gafanhoto';
+    echo "$nome \"$apelido\" $sobrenome";
     
     ?>
 
