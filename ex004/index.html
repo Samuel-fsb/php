@@ -10,6 +10,16 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            background-image: linear-gradient(to bottom, white, blue);
+            min-height: 100vh;
+        }
+
+        section{
+            background-color: white;
+            box-shadow: 3px 3px 3px solid;
+            border-radius: 5px;
+            width: 20%;
+            height: 400px;
         }
 
         label{
@@ -19,18 +29,42 @@
             flex-direction: column;
             gap: 10px;
         }
+
+        button{
+            background-color: green;
+            color: white;
+            padding: 20px;
+            font-weight: 400;
+            border-radius: 4px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <h1>Testando Formulários</h1>
+    <header>
+        <h1>Apresente-se Para Nós</h1>
+    </header>
 
-    <form action="">
-        <label for="">
-            <input type="text" name="" id="">
-            <input type="email" name="" id="">
-            <input type="password" name="" id="">
-            <button type="submit">Entrar na Conta</button>
+    <section>
+        <form action="cad.php" method="get">
+            <label for="nome">
+                <input type="text" name="nome" id="idnome">
+            Seu Nome:
         </label>
-    </form>
+
+        <label for="email">
+            <input type="email" name="email" id="idemail">
+            Seu Email:
+        </label>
+
+        <label for="senha">
+            <input type="password" name="senha" id="idsenha">
+            Sua Senha:
+        </label>
+
+        <button type="submit">Entrar na Conta</button>
+
+        </form>
+    </sesction>
 </body>
 </html>
