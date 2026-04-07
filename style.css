@@ -7,8 +7,8 @@
             min-height: 100vh;
         }
 
-        h1{
-            color: white;
+        section h1{
+            color: black;
             font-size: 40px;
             font-weight: 400;
         }
@@ -54,4 +54,9 @@
             border-radius: 4px;
             cursor: pointer;
             margin-top: 50px;
+        }
+
+        button > a{
+            list-style: none;
+            color: white;
         }
