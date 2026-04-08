@@ -7,10 +7,11 @@
             min-height: 100vh;
         }
 
-        section h1{
+        h1{
             color: black;
             font-size: 40px;
             font-weight: 400;
+            text-align: center;
         }
 
         section{
