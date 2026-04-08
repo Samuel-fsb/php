@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../style.css">
     <title>Resultado</title>
     <style>
-
         section{
             display: flex;
             align-items: center;
