@@ -11,6 +11,7 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            height: 500px;
         }
 
         button{
@@ -24,6 +25,11 @@
 
         h1{
             text-align: center;
+        }
+        p{
+            color: black;
+            font-size: larger;
+            font-weight: 400;
         }
     </style>
 </head>
@@ -40,9 +46,11 @@
             <button type="submit">Converter</button>
         </form>
         <?php 
-            $Quantia = $_GET['reais'];
-            $Conversor = $Quantia / 5.14;
-            echo "<p>Convertido para dólares, o seu dinheiro vale $Conversor.</p>";
+            $Padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
+            $Cotacao = 5.14;
+            $Quantia = $_GET['reais'] ?? 0;
+            $Conversor = $Quantia / $Cotacao;
+            echo "Com o seu dinheiro que é" . numfmt_format_currency($Padrao, $Quantia, "BRL") . " convertido para dólares, vale" . numfmt_format_currency($Padrao, $Cotacao, "USD");
         ?>
     </section>
 </body>
