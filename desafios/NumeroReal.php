@@ -11,7 +11,7 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            height: 360px;
+            height: 420px;
             width: 340px;
             margin: 0px 0px 0px 0px;
         }
@@ -46,12 +46,15 @@
          </h1>
          <?php
          $numero = $_GET['Real'] ?? 0;
-         $ParteInteira = ;
-         $ParteFracionaria = ;
+         $ParteInteira = (int) $numero;
+         $ParteFracionaria = $ParteInteira - $numero;
 
-         echo "Analisando o número <strong>$numero</strong>, informado pelo usuário: ";
-         echo " <li>A parte inteira do número é $ParteInteira.</li>   
-         <li>A parte fracionária do número é $ParteFracionaria.</li>";
+         echo "Analisando o número <strong>" . number_format($numero, 3, ",", ".") ."</strong>, informado pelo usuário: ";
+
+         echo "<ul>
+             <li>A parte inteira do número é " . number_format($ParteInteira, 0, ",", ".")."</li>
+             <li>A parte fracionária do número é " . number_format($ParteFracionaria, 3, ",", ".")."</li>
+             </ul>";
          ?>
          <button><a href="exd005.html">Voltar</a></button>
      </section>
